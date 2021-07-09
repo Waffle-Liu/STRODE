@@ -1,12 +1,9 @@
 # Stochastic Boundary Ordinary Differential Equation (STRODE)
 This is the authors' official PyTorch implementation for STRODE. This repo contains code for experiments in the **ICML 2021** paper '[Stochastic Boundary Ordinary Differential Equation]()'.
 
-## Abstract
+## Project Description
 
-Perception of time from sequentially acquired sensory inputs is rooted in everyday behaviors of individual organisms. Yet, most algorithms for time-series modeling fail to learn dynamics of random event timings directly from visual or audio inputs, requiring timing annotations during training that are usually unavailable for  real-world applications. For instance, neuroscience perspectives on postdiction imply that there exist variable temporal ranges within which the incoming sensory inputs can affect the earlier perception, but such temporal ranges are mostly unannotated for real applications such as automatic speech recognition (ASR).
-In this paper, we present a probabilistic ordinary differential equation (ODE), called STochastic boundaRy ODE (STRODE), that learns both the timings and the dynamics of time series data without requiring any timing annotations during training. STRODE allows the usage of differential equations to sample from the posterior point processes, efficiently and analytically. We further provide theoretical guarantees on the learning of STRODE. Our empirical results show that our approach successfully infers event timings of time series data.
-Our method achieves competitive or superior performances compared to existing
-state-of-the-art methods for both synthetic and real-world datasets. 
+The precise timing of each item in real-world data streams can carry important information about the underlying dynamics.  However, most algorithms for time-series modeling, e.g., latent ordinary differential equation (ODE), fail to infer timings directly from visual or audio inputs, and still require a large amount of training data with timing annotations. Inspired by neuroscience perspectives on time perception, we generalize neural ODE in handling a special type of boundary value problem with random boundary times and propose a probabilistic ordinary differential equation (ODE), called Stochastic boundaRy ODE (STRODE). Extensive experiments show that STRODE learns both the timings and the dynamics of time series data without requiring any timing annotations during training.
 
 ## How to run
 ### Environment
