@@ -12,7 +12,7 @@ The precise timing of each item in real-world data streams can carry important i
 
 ### Running experiments
 
-#### Toy 
+#### Toy Dataset
 
 For training and evaluation on the toy dataset, run the following script:
 ```
@@ -26,7 +26,7 @@ Run the following script to draw the figure
 python draw.py
 ```
 
-#### RotateMNIST 
+#### Rotating MNIST ThumbnailT 
 
 For training and evaluation of STRODE, run the following script:
 ```
