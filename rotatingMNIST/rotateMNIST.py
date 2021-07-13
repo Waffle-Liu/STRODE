@@ -1,5 +1,5 @@
 
-from torchvision.transforms.functional import rotate, to_tensor
+from torchvision.transforms.functional import rotate
 from torch.utils.data import Dataset
 from PIL import Image
 import numpy as np
