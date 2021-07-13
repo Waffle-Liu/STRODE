@@ -2,7 +2,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from pickle import TRUE
 from easydict import EasyDict
 import os
 
@@ -23,13 +22,14 @@ opt.seed = 112
 opt.h_dim = 8
 
 opt.train_batch_size = 50
+opt.val_batch_size = 50
 opt.test_batch_size = 50
 
 # load data path for training and testing 
-opt.isLoad = True
+opt.isLoad = False
 
 ###########################################################################################
-opt.n_samples = {"train":5000, "test":100}
+opt.n_samples = {"train":5000, "val":100, "test":100}
 opt.n_total_tp = 10
 opt.dataset_name = 'sin'
 

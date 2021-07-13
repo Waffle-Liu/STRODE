@@ -19,6 +19,8 @@ class SinDataset(Dataset):
         if opt.isLoad == True:
             if mode == 'train':
                 self.data = torch.load('./data/load_'+str(mode)+'_'+self.dataset+'.pt')
+            elif mode == 'val':
+                self.data = torch.load('./data/load_'+str(mode)+'_'+self.dataset+'.pt')
             elif mode == 'test':
                 self.data = torch.load('./data/load_'+str(mode)+'_'+self.dataset+'.pt')
             print("Load "+self.dataset+'_'+mode+"set successfully!")
