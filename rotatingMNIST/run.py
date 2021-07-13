@@ -130,7 +130,7 @@ def val(model, val_data_loader):
     cur_mse = mse_total/len(val_data_loader)
     cur_cs_ours = cs_ours_total/len(val_data_loader)
     cur_cs_baseline = cs_baseline_total/len(val_data_loader)
-    logger.info("Test MSE: %f, Cos Sim(ours/baseline): %f, %f" % (cur_mse, cur_cs_ours, cur_cs_baseline))
+    logger.info("Val MSE: %f, Cos Sim(ours/baseline): %f, %f" % (cur_mse, cur_cs_ours, cur_cs_baseline))
     
     return cur_mse
 
@@ -165,7 +165,7 @@ best_mse = 10000
 for e in range(args.num_epoch):
     train(model, train_dataloader, optimizer, e)
     mse = val(model, val_dataloader)
-    # mse = test(model, test_dataloader)
+    mse_t = test(model, test_dataloader)
     if mse < best_mse:
         best_mse = mse
         torch.save(model.state_dict(), opt.exp + '/best_nnet.pth')
@@ -174,6 +174,6 @@ for e in range(args.num_epoch):
 
 
 state_dic = torch.load(opt.exp + '/best_nnet.pth')
-model.load(state_dic)
+model.load_state_dict(state_dic)
 test_mse = test(model, test_dataloader)
 logger.info("Test MSE: %f" % (test_mse))
