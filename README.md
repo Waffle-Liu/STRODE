@@ -19,26 +19,20 @@ For training and evaluation on the toy dataset, run the following script:
 cd toy
 python run.py --dataset exp
 ```
-where `--dataset` specify the dataset used in the experiments. For more specifications of the experiments, see details in `config.py`.
+where `--dataset` specifies the dataset used in the experiments. For more specifications of the experiments, see details in `config.py`.
 
-Run the following script to draw the figure
-```
-python draw.py
-```
+#### Rotating MNIST Thumbnail 
 
-#### Rotating MNIST ThumbnailT 
-
-For training and evaluation of STRODE, run the following script:
+For training and evaluation on the rotating MNIST thumbnail, run the following script:
 ```
-cd rotateMNIST
+cd rotatingMNIST
 python run.py --model strode --dataset exp
 ```
 where `--model` and `--dataset` specify the model and the dataset used in the experiments. For more specifications of the experiments, see details in `config.py`.
 
-
 ### Data
 
-You can directly use the datasets we generate in `./data` by setting `isLoad=True`(default) in `config.py`. You can also set `isLoad=False` and run the script above(new datasets will be automatically generated)before training the model. If you run the RotateMNIST experiment, make sure that you download the MNIST dataset. You can directly use `torchvision`. 
+You can directly set `isLoad=False`(default) in `config.py` and run the script above and new datasets will be automatically generated. `./data/MNIST/` contains the processed MNIST dataset. You can refer to `torchvision.datasets.MNIST` for details. 
 
 
 ## Citation
