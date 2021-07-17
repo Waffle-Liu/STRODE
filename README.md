@@ -38,7 +38,14 @@ You can directly set `isLoad=False`(default) in `config.py` and run the script a
 ## Citation
 If you use STRODE or this codebase in your own work, please cite our paper: 
 ```
-
+@inproceedings{huang2021strode,
+  title={STRODE: Stochastic Boundary Ordinary Differential Equation},
+  author={Huang, Hengguan and Liu, Hongfu and Wang, Hao and Xiao, Chang and Wang, Ye},
+  booktitle={International Conference on Machine Learning},
+  pages={4435--4445},
+  year={2021},
+  organization={PMLR}
+}
 ```
 
 ## License
