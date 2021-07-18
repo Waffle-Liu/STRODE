@@ -5,6 +5,11 @@ This is the authors' official PyTorch implementation for STRODE. This repo conta
 
 The precise timing of each item in real-world data streams can carry important information about the underlying dynamics.  However, most algorithms for time-series modeling, e.g., latent ordinary differential equation (ODE), fail to **infer timings (timestamps) directly from visual or audio inputs**, and still require a large amount of training data with timing annotations. Inspired by neuroscience perspectives on time perception, we generalize neural ODE in handling a special type of boundary value problem with random boundary times and propose a probabilistic ordinary differential equation (ODE), called Stochastic boundaRy ODE (STRODE). Extensive experiments show that STRODE successfully learns both the **timings (timestamps)** and the **dynamics** of time series data **without requiring any timing annotations during training**.
 
+## Method Overview
+<p align="center">
+<img src="fig/STRODE-model.png" alt="" data-canonical-src="fig/STRODE-model.png" width="75%"/>
+</p>
+
 ## How to run
 ### Environment
 * Python 3.7
