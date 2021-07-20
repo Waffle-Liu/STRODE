@@ -1,5 +1,5 @@
 # Stochastic Boundary Ordinary Differential Equation (STRODE)
-This is the authors' official PyTorch implementation for STRODE. This repo contains code for experiments in the **ICML 2021** paper '[STRODE: Stochastic Boundary Ordinary Differential Equation]()'.
+This is the authors' official PyTorch implementation for STRODE. This repo contains code for experiments in the **ICML 2021** paper '[STRODE: Stochastic Boundary Ordinary Differential Equation](https://arxiv.org/pdf/2107.08273.pdf)'.
 
 ## Project Description
 
